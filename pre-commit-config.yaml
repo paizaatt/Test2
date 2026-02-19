@@ -1,0 +1,18 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0  # Sử dụng version mới nhất
+    hooks:
+    -   id: trailing-whitespace     # Xóa khoảng trắng thừa cuối dòng
+    -   id: end-of-file-fixer       # Đảm bảo file kết thúc bằng 1 dòng trống
+    -   id: check-yaml              # Kiểm tra cú pháp các file YAML
+    -   id: check-added-large-files # Ngăn chặn commit file quá nặng (>500kb)
+
+-   repo: https://github.com/Yelp/detect-secrets
+    rev: v1.4.0
+    hooks:
+    -   id: detect-secrets          # Quét xem có lộ API Key, Password không
+
+-   repo: https://github.com/google/google-java-format
+    rev: v1.17.0
+    hooks:
+    -   id: google-java-format      # Tự động format code Java theo chuẩn Google
