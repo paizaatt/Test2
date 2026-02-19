@@ -1,0 +1,67 @@
+# ==========================================
+# 1. BẢO MẬT (QUAN TRỌNG NHẤT)
+# ==========================================
+# Chặn các file chứa biến môi trường, mật khẩu database, API keys
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secret.txt
+config/settings.local.php
+
+# ==========================================
+# 2. THƯ VIỆN VÀ FILE TẠM (GIẢM DUNG LƯỢNG)
+# ==========================================
+# Node.js (Nếu dự án dùng JS)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Python (Nếu dự án dùng Python)
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+
+# PHP/Composer
+vendor/
+
+# ==========================================
+# 3. FILE CỦA HỆ ĐIỀU HÀNH VÀ IDE
+# ==========================================
+# File rác của MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# File rác của Windows
+Thumbs.db
+desktop.ini
+
+# File cấu hình riêng của các trình soạn thảo (VS Code, JetBrains...)
+.vscode/
+.idea/
+*.swp
+*.sublime-project
+
+# ==========================================
+# 4. FILE LOG VÀ FILE TẠM CỦA HỆ THỐNG
+# ==========================================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.cache/
+tmp/
+dist/
+build/
+
+# ==========================================
+# 5. CÁC FILE TEST VÀ REPORT CÁ NHÂN
+# ==========================================
+.phpunit.result.cache
+.coverage
+htmlcov/
